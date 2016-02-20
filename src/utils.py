@@ -23,8 +23,9 @@ def getWordVector(word, word_vec_dict):
 
 
 def main():
-    glove_word_vec_file = './../glove/glove.6B.300d.txt'
+    glove_word_vec_file = './../data/glove/glove.6B.50d.txt'
     word_vec_dict = readGloveData(glove_word_vec_file)
+    print getWordVector('hello', word_vec_dict)
 
 if __name__ == "__main__":
     main()
